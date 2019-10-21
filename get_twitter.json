@@ -1,0 +1,10 @@
+input{
+    file{
+        path => "/フォルダのフルパス/logs/**.csv"
+    }
+}
+
+output{
+    stdout{ codec => rubydebug
+    }
+}
